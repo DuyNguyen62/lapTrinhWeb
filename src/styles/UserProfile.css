@@ -1,0 +1,134 @@
+/* Main container for the user profile page */
+.profile-container {
+  background-color: #f4f7f6;
+  padding: 2rem 1rem;
+  min-height: calc(100vh - 80px); /* Adjust based on Navbar height */
+  font-family: 'Roboto', sans-serif;
+}
+
+/* The main card holding the profile information */
+.profile-card {
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  overflow: hidden; /* To contain the tab borders */
+}
+
+/* Tab navigation */
+.profile-tabs {
+  display: flex;
+  background-color: #f9fafb;
+}
+
+.tab-button {
+  flex: 1;
+  padding: 1.2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #555;
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+  transition: color 0.3s ease, border-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+}
+
+.tab-button:hover {
+  color: #3498db;
+}
+
+.tab-button.active {
+  color: #3498db;
+  border-bottom-color: #3498db;
+}
+
+/* Form styling */
+.profile-form {
+  padding: 2.5rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  margin-bottom: 0.6rem;
+  font-weight: 600;
+  color: #555;
+}
+
+.input-group input {
+  padding: 0.9rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+.input-group input:disabled {
+    background-color: #f4f4f4;
+    cursor: not-allowed;
+}
+
+
+/* Button styling */
+.profile-button {
+  align-self: flex-start;
+  padding: 0.9rem 2rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #3498db;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.profile-button:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+/* Feedback messages */
+.message {
+    padding: 1rem 3rem;
+    margin: 1.5rem 3rem 0 3rem;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.message.success {
+    background-color: #eafaf1;
+    color: #2ecc71;
+}
+
+.message.error {
+    background-color: #fbeae5;
+    color: #e74c3c;
+}
+.message.info {
+    background-color: #e7f3fe;
+    color: #3498db;
+}

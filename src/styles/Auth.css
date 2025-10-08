@@ -1,0 +1,131 @@
+/* Main container for authentication pages */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 80px); /* Adjust based on Navbar height */
+  background-color: #f4f7f6;
+  padding: 2rem 1rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* The card holding the form */
+.auth-card {
+  background-color: #ffffff;
+  padding: 2.5rem 3rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px;
+}
+
+/* Header section with icon and titles */
+.auth-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.auth-icon {
+  font-size: 2.5rem;
+  color: #3498db;
+  margin-bottom: 1rem;
+}
+
+.auth-title {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin: 0 0 0.5rem 0;
+}
+
+.auth-subtitle {
+    color: #7f8c8d;
+    font-size: 1.1rem;
+}
+
+/* Form styling */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #555;
+}
+
+.input-group input {
+  padding: 0.9rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+/* Button styling */
+.auth-button {
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #3498db;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 1rem;
+}
+
+.auth-button:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+/* Error and Success Messages */
+.auth-error {
+    background-color: #fbeae5;
+    color: #e74c3c;
+    padding: 0.8rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.auth-success {
+    background-color: #eafaf1;
+    color: #2ecc71;
+    padding: 0.8rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Footer link */
+.auth-footer {
+  margin-top: 2rem;
+  text-align: center;
+  color: #555;
+}
+
+.auth-link {
+  color: #3498db;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.auth-link:hover {
+  text-decoration: underline;
+}
+.auth-link:active {
+  color: #2980b9;
+}

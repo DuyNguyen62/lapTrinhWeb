@@ -1,0 +1,92 @@
+/* Main container for the dashboard */
+.admin-dashboard {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f4f7f6;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Sidebar styling */
+.sidebar {
+  width: 260px;
+  background: linear-gradient(145deg, #1f2833, #2c3e50);
+  color: #c5c6c7;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-logo {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  color: #66fcf1;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Navigation links */
+.sidebar-nav {
+  list-style: none;
+  padding: 0;
+  flex-grow: 1; /* Pushes footer to the bottom */
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.2rem;
+  margin-bottom: 0.8rem;
+  text-decoration: none;
+  color: #c5c6c7;
+  font-size: 1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: rgba(102, 252, 241, 0.1);
+  color: #66fcf1;
+}
+
+.nav-link.active {
+  background-color: #66fcf1;
+  color: #1f2833;
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(102, 252, 241, 0.2);
+}
+
+.nav-link span {
+  margin-left: 1rem;
+}
+
+/* Sidebar Footer */
+.sidebar-footer {
+  margin-top: auto; /* Pushes to the bottom */
+}
+
+.logout-btn {
+  width: 100%;
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-align: left;
+}
+
+.logout-btn:hover {
+  color: #e74c3c; /* Red color for logout on hover */
+  background-color: rgba(231, 76, 60, 0.1);
+}
+
+/* Main Content styling */
+.main-content {
+  flex: 1;
+  padding: 2.5rem 3rem;
+  overflow-y: auto;
+}
+.main-content h1 {
+  font-size: 2.5rem;
+  color: #0b0c10;
+  margin-bottom: 1.5rem;
+}
